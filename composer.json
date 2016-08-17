@@ -2,7 +2,7 @@
     "name": "jacklaravel/calendar",
     "description": "calendar packages",
     "license": "MIT",
-    "keywords": ["package", "jack/calendar"],
+    "keywords": ["package", "jackcalendar"],
     "type": "package",
     "authors": [
         {
@@ -12,6 +12,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-
+        "laravel/framework": "5.2.*"
     }
 }
