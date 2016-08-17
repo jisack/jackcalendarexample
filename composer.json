@@ -12,6 +12,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "laravel/framework": "5.2.*"
+
     }
 }
