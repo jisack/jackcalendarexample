@@ -10,8 +10,9 @@
             "email": "jokjack26172@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "jacklaravel/calendar": "dev-master"
     }
 }
