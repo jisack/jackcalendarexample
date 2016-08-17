@@ -12,7 +12,6 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "laravel/framework": "5.2.*",
-        "jacklaravel/calendar": "dev-master"
+        "laravel/framework": "5.2.*"
     }
 }
