@@ -1,0 +1,139 @@
+.progress{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    margin-top: 65px;
+}
+
+.mailbox-attachments li{
+    position: relative;
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .2s ease .15s;
+    -o-transition: all .2s ease .15s;
+    -ms-transition: all .2s ease .15s;
+    transition: all .2s ease .15s;
+}
+.remove-picture{
+    opacity:1;
+    width: 0 !important;
+    height:0 !important;
+}
+.remove-picture > .mailbox-attachment-info{
+    display: none;
+}
+
+textarea.form-control{
+    white-space: pre-wrap;
+}
+
+
+/*///////////////////////// TRASH ///////////////////*/
+
+.trash {
+    background: #fff;
+    width: 50px;
+    height: 60px;
+    margin: auto;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 99px;
+}
+.trash:after, .trash:before {
+    content: '';
+    position: absolute;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+}
+.trash:after {
+    height: 10px;
+    background: #fff;
+    width: 120%;
+    left: -10%;
+    top: -13px;
+    -webkit-animation: demoAft 0.3s ease-out 0.5s 2 alternate;
+    animation: demoAft 0.3s ease-out 0.5s 2 alternate;
+}
+.trash:before {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -23px;
+    border: 5px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 5;
+    width: 40px;
+    -webkit-animation: demoBfr 0.3s ease-out 0.5s 2 alternate;
+    animation: demoBfr 0.3s ease-out 0.5s 2 alternate;
+}
+
+.btn-trash {
+    width: 150px;
+    height: 150px;
+    background: #03A8F2;
+    border-radius: 100%;
+    box-shadow: 0 3px 5px #bbb;
+    margin: auto;
+    /*position: fixed;*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    /*cursor: -webkit-grabbing;*/
+    /*cursor: grabbing;*/
+}
+/*.btn-trash:active {*/
+    /*cursor: -webkit-grab;*/
+    /*cursor: grab;*/
+/*}*/
+.btn-drag .trash:after {
+    -webkit-transform: translate(-3px, -8px) rotate(-15deg);
+    transform: translate(-3px, -8px) rotate(-15deg);
+}
+.btn-drag .trash:before {
+    -webkit-transform: translate(-6px, -7px) rotate(-15deg);
+    transform: translate(-6px, -7px) rotate(-15deg);
+}
+@-webkit-keyframes demoAft {
+    to {
+        -webkit-transform: translate(-3px, -8px) rotate(-15deg);
+        transform: translate(-3px, -8px) rotate(-15deg);
+    }
+}
+@keyframes demoAft {
+    to {
+        -webkit-transform: translate(-3px, -8px) rotate(-15deg);
+        transform: translate(-3px, -8px) rotate(-15deg);
+    }
+}
+@-webkit-keyframes demoBfr {
+    to {
+        -webkit-transform: translate(-6px, -7px) rotate(-15deg);
+        transform: translate(-6px, -7px) rotate(-15deg);
+    }
+}
+@keyframes demoBfr {
+    to {
+        -webkit-transform: translate(-6px, -7px) rotate(-15deg);
+        transform: translate(-6px, -7px) rotate(-15deg);
+    }
+}
+
+.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: #605ca8;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #605ca8;
+    border-color: #605ca8;
+}
+
+.box.box-primary {
+    border-top-color: #605ca8;
+}
+
+.box .overlay, .overlay-wrapper .overlay{
+    display: none;
+}

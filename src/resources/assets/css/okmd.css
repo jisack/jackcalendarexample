@@ -1,0 +1,539 @@
+@font-face {
+    font-family: ThaiSansNeue-Bold;
+    src: url(../fonts/ThaiSansNeue/ThaiSansNeue-Bold.ttf);
+}
+@font-face {
+    font-family: ThaiSansNeue-Regular;
+    src: url(../fonts/ThaiSansNeue/ThaiSansNeue-Regular.ttf);
+}
+
+
+html {
+   height: 100%;
+
+}
+body {
+   background-color: #546464;
+    overflow-x: hidden;
+    font-family: ThaiSansNeue-Bold;
+
+}
+
+.magazine-img
+{
+    width: 200px;
+}
+
+@media (max-width: 480px) {
+    .magazine-img {
+        width: 150px;
+    }
+}
+
+.magazine-img img{
+    width: 100%;
+}
+.magazine-img a{
+    text-decoration: none;
+}
+
+.p2{
+    color:white;
+    text-align:center;
+    font-size: 22px;
+}
+
+
+
+.table-row {
+   border: 0 !important;
+   padding: 0 !important;
+}
+.table-row a, .table-row a:hover {
+   text-decoration: none;
+}
+.table-row p {
+   padding: 30px 150px;
+   margin: 0;
+    font-size: 22px;
+}
+@media (max-width:768px) {
+   .table-row p {
+      padding: 30px 43px;
+      margin: 0;
+   }
+}
+.box-nav {
+   margin: 11px 25px;
+    cursor: pointer;
+}
+.nav-bar {
+   position: relative;
+   padding-top: 16px;
+   background-color:#212121;  
+   height:80px;
+   text-align: center;
+}
+
+.navbar-nav {
+    margin: 0.5px -15px;
+    font-size: 20px;
+}
+.navbar-nav li.active{
+    background-color: #eee !important;
+}
+
+.collapse-nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 22px 0 25px 43px;
+    border-bottom: 1px solid #3c3c3c;
+    font-size: 26px;
+}
+
+.cate-menu a{
+    text-decoration: none;
+}
+
+input[type="text"],input[type="password"] {
+   width: 100%;
+   display: block;
+   font-size: 20px;
+   margin: 20px 0;
+   background-color: transparent;
+   color: #FFFFFF;
+   border: none ;
+   border-bottom: solid 1px #ffffff;
+}
+
+input[type="text"]:focus,input[type="password"]:focus{
+   outline: none;
+}
+
+button{
+   margin: 20px 0;
+   background-color: #0d1112;
+   font-size: 20px;
+   width: 100%;
+   height: 45px;
+   color: #FFFFFF;
+   border: none;
+}
+
+button:focus{
+   outline: none;
+}
+
+.button-group{
+   margin: 39px 19.5px;
+}
+
+.button-social{
+   margin: 5px 0;
+   width: 100%;
+   color: #FFFFFF;
+   border: none;
+}
+
+h3{
+   color: #FFFFFF;
+}
+
+label{
+   font-size: 14px;
+   color: #727272;
+}
+
+.calendar-span{
+   padding: 10px 0;
+   color: #dfffff;
+   text-align: center;
+   font-size: 24px;
+   height:48px;
+   width: 100%;
+   background-color: #364646;
+}
+.calendar-content{
+   background-color: #546464;
+}
+.calendar-content h4{
+     font-size: 42px;
+     font-family: ThaiSansNeue-Regular;
+ }
+.calendar-content h4 > p{
+    font-size: 22px;
+    font-family: ThaiSansNeue-Bold;
+}
+.calendar-content h5{
+    font-size: 24px;
+}
+.calendar-content p{
+    font-size: 20px;
+}
+
+/*////////////////Date PICKER/////////////////////*/
+#datepicker{
+   box-shadow: 0px 2px 10px #0c0c0c;
+}
+
+.calendar {
+  position: absolute;
+  width: 385px;
+  right: 15px;
+    margin-top: 1px;
+  background: #fff;
+  overflow: hidden;
+   z-index:500;
+}
+
+@media (max-width:460px) {
+   .calendar {
+      width: 100%;
+      right: 0;
+   }
+}
+
+#calendar-toggle{
+   cursor: pointer;
+}
+
+.back-arrow{
+   cursor: pointer;
+}
+
+
+.ui-datepicker-header {
+  height: 50px;
+  line-height: 50px;
+  color: #b0aead;
+  background: #364646;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border: 2px solid #b0aead;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-left: 2px solid #b0aead;
+  border-bottom: 2px solid #b0aead;
+}
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #5ed1cc;
+}
+.ui-datepicker-title {
+  text-align: center;
+    font-size: 22px;
+}
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+   background-color: #546464;
+}
+.ui-datepicker-calendar thead tr th span {
+  padding-top: 10px;
+  text-align: center;
+  display: block;
+  width: 40px;
+  color: #cacaca;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.ui-state-default {
+  display: block;
+  text-decoration: none !important;
+  color: #323232;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+
+.ui-state-default:hover {
+  background: rgba(0,0,0,0.02);
+}
+.ui-state-highlight {
+  color: #8dd391;
+}
+.ui-state-active {
+  color: #5ed1cc;
+}
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+
+.hl-ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+/*///////////////////////////////   OFF CANVAS //////////////////*/
+.off-canvas{
+    position: absolute;
+    width: 318px;
+    background-color: #22272a;
+    min-height: 960px;
+}
+
+
+
+.off-canvas ul{
+    padding-left: 0;
+    border-top: 1px solid #ffffff;
+}
+
+.off-canvas ul li{
+    color: #ffffff;
+    width: 100%;
+    height: 66px;
+    border-bottom: 1px solid #ffffff;
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+.wrapper-content{
+    transition-delay: 0s;
+    background: #a5b7b7;
+    box-shadow: -5px -1px 10px black;
+    transition-duration: 0.5s;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    min-height: 960px;
+}
+
+.wrapper-content.is-open{
+    transform: translate3d(318px, 0, 0);
+}
+
+#site-wrapper{
+    min-height: 100%;
+}
+
+.user-profile{
+    -webkit-filter: blur(2.5px);
+    -moz-filter: blur(2.5px);
+    -o-filter: blur(2.5px);
+    -ms-filter: blur(2.5px);
+    filter: blur(2.5px);
+    min-height: 165px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.off-canvas img{
+    position: absolute;
+    top: 36px;
+    width: 78px;
+    left: 36%;
+    border-radius: 50px;
+}
+
+/*   MAGAZINE BOX  CR. SAND*/
+.box-magazine {
+    margin-top: 30px;
+}
+.box-magazine .magazine-item {
+    float: left;
+    margin-left: 5%;
+    width: 200px;
+    /*height: 209px;*/
+}
+.magazine-item img.magazine-img {
+    width: 100%;
+    background-color: #ccc;
+}
+.magazine-item p.magazine-title {
+    text-align: center;
+    color : #f6f6f6;
+    font-size: 18px;
+    height:50px;
+}
+
+@media (max-width:480px) {
+    .box-magazine .magazine-item {
+        margin-left: 14%;
+        width: 250px;
+    }
+}
+
+/* MAGAZINE DETAILLL////////////////////////////////*/
+
+iframe > html > img{
+    width: 100%;
+}
+
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+    min-width: 100% !important;
+    width: 100% !important;
+}
+
+/* SEARCH */
+.search-form .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #212121;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid #212121;
+    margin-top: -5px;
+}
+
+/*.navbar-fixed-top.nav-bar img{*/
+    /*position: absolute;*/
+/*}*/
+
+@media (max-width:480px) {
+    .pull-right.box-nav.search{
+        width: 100%;
+        background-color: #212121;
+        margin: 0px;
+        padding: 10px;
+    }
+    .navbar-fixed-top.nav-bar img{
+        position: static;
+    }
+
+}
+
+.search-form .form-group input.form-control {
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+    display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+    display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+    width: 100%;
+    border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #3596e0;
+    left: initial;
+    font-size: 14px;
+
+}
+
+/* SLIDER */
+
+/* jssor slider bullet navigator skin 03 css */
+/*
+.jssorb03 div           (normal)
+.jssorb03 div:hover     (normal mouseover)
+.jssorb03 .av           (active)
+.jssorb03 .av:hover     (active mouseover)
+.jssorb03 .dn           (mousedown)
+*/
+.jssorb03 {
+    position: absolute;
+}
+.jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    color: white;
+    font-size: 12px;
+    background: url('../plugins/carousel-slider.slider/img/b03.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb03 div { background-position: -5px -4px; }
+.jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+.jssorb03 .av { background-position: -65px -4px; }
+.jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+/* jssor slider arrow navigator skin 03 css */
+/*
+.jssora03l                  (normal)
+.jssora03r                  (normal)
+.jssora03l:hover            (normal mouseover)
+.jssora03r:hover            (normal mouseover)
+.jssora03l.jssora03ldn      (mousedown)
+.jssora03r.jssora03rdn      (mousedown)
+*/
+.jssora03l, .jssora03r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url('../plugins/carousel-slider.slider/img/a03.png') no-repeat;
+    overflow: hidden;
+}
+.jssora03l { background-position: -3px -33px; }
+.jssora03r { background-position: -63px -33px; }
+.jssora03l:hover { background-position: -123px -33px; }
+.jssora03r:hover { background-position: -183px -33px; }
+.jssora03l.jssora03ldn { background-position: -243px -33px; }
+.jssora03r.jssora03rdn { background-position: -303px -33px; }
+
+
+
+
+

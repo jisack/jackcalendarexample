@@ -1,0 +1,13 @@
+{
+    "name": "jacklaravel/calendar",
+    "description": "calendar packages",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jack JJ",
+            "email": "jokjack26172@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
