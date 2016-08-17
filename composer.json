@@ -4,6 +4,7 @@
     "license": "MIT",
     "keywords": ["package", "jackcalendar"],
     "type": "package",
+    "language" : "laravel",
     "authors": [
         {
             "name": "Jack JJ",
