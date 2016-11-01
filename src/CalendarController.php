@@ -12,7 +12,7 @@ class CalendarController extends Controller
 {
     //
     public function index(){
-        return view('calendar_views::calendar',['calendar' => Calendar::all()]);    
+        return view('jacklaravel.calendar.calendar',['calendar' => Calendar::all()]);
     }
 
     //

@@ -17,8 +17,9 @@ class CalendarServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'\resources\views', 'calendar_views');
         $this->publishes([
             __DIR__.'\resources\assets' => public_path('jacklaravel/assets'),
-            __DIR__.'\resources\plugins' => public_path('jacklaravel/plugins')
-            ],'public');
+            __DIR__.'\resources\plugins' => public_path('jacklaravel/plugins'),
+            __DIR__.'\resources\views' => base_path('resources/views/jacklaravel/calendar')
+        ],'public');
     }
 
     /**
