@@ -74,7 +74,7 @@
                                 </ul>
                             </div>
                             <!-- /btn-group -->
-                            <div class="input-group">
+                            <div class="input-group" style="margin-bottom: 6px">
                                 <input id="new-event" type="text" class="form-control" placeholder="Event Title">
                                 <input type="hidden" id="color-deposit">
                                 <div class="input-group-btn">

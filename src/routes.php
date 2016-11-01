@@ -10,10 +10,20 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+$config = \Illuminate\Support\Facades\Config::get("jack-calendar");
 
-Route::group(['prefix' => 'calendar','namespace' => 'Jacklaravel\Calendar'], function () {
-    Route::get('/', 'CalendarController@index');
-    Route::post('add', 'CalendarController@createEvent');
-    Route::post('change', 'CalendarController@setEvent');
-    Route::post('remove', 'CalendarController@removeEvent');
-});
+if (!$config['auth']) {
+    Route::group(['prefix' => $config['prefix'], 'namespace' => 'Jacklaravel\Calendar'], function () {
+        Route::get('/', 'CalendarController@index');
+        Route::post('add', 'CalendarController@createEvent');
+        Route::post('change', 'CalendarController@setEvent');
+        Route::post('remove', 'CalendarController@removeEvent');
+    });
+} else {
+    Route::group(['middleware' => $config['middleware'], 'prefix' => $config['prefix'], 'namespace' => 'Jacklaravel\Calendar'], function () {
+        Route::get('/', 'CalendarController@index');
+        Route::post('add', 'CalendarController@createEvent');
+        Route::post('change', 'CalendarController@setEvent');
+        Route::post('remove', 'CalendarController@removeEvent');
+    });
+}
