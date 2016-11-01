@@ -14,15 +14,22 @@ calendar packages for example
   in composer.json add
   ```json
   "Jacklaravel\\Calendar\\" : "packages/jacklaravel/calendar/src/"
-  ```
+  ``` 
   to "psr-4"
+  
+  in config/app add 
+   ```php
+        Jacklaravel\Calendar\CalendarServiceProvider::class,
+   ```
+   to array provider
   
   and then run 
   ```bash
-      $ composer dump-autoload
+      $ composer require jacklaravel/calendar
   ```
   
   run
+  
   ```bash
       $ php artisan jack:calendar
   ```
