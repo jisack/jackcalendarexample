@@ -1,7 +1,7 @@
 <?php
     return [
         //AUTH USAGE
-        "auth" => true,
+        "auth" => false,
 
         //prefix
 
