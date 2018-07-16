@@ -1,16 +1,16 @@
 # jackcalendarexample
 calendar packages for example
 
-##Requirements
+## Require
 * [Laravel 5.**](https://laravel.com/docs/5.2)
 
-##Include
+## Include
 * [Admin LTE](https://almsaeedstudio.com/preview)
 * [Full Calendar](http://fullcalendar.io/)
 * [Jquery](http://jquery.com/)
 * [Bootstrap](http://getbootstrap.com/)
 
-##Installation
+## Installation
   in composer.json add
   ```json
   "Jacklaravel\\Calendar\\" : "packages/jacklaravel/calendar/src/"
